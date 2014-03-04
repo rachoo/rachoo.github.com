@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Android | Diablo]]></title>
   <link href="http://rachoo.github.io/blog/categories/android/atom.xml" rel="self"/>
   <link href="http://rachoo.github.io/"/>
-  <updated>2014-03-04T16:24:26+08:00</updated>
+  <updated>2014-03-04T16:27:34+08:00</updated>
   <id>http://rachoo.github.io/</id>
   <author>
     <name><![CDATA[Rachoo]]></name>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Android自定义控件]]></title>
-    <link href="http://rachoo.github.io/blog/2014/03/04/title/"/>
+    <link href="http://rachoo.github.io/blog/2014/03/04/custom_view/"/>
     <updated>2014-03-04T15:55:18+08:00</updated>
-    <id>http://rachoo.github.io/blog/2014/03/04/title</id>
+    <id>http://rachoo.github.io/blog/2014/03/04/custom_view</id>
     <content type="html"><![CDATA[<p>Android控件样式自定义是用定义在drawable文件夹下的XML文件实现，在布局文件中通过设置控件的background属性达到效果。</p>
 
 <p>一、控件常见状态</p>
