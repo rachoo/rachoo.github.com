@@ -120,6 +120,39 @@
 7、android:window_focused boolean。
 “true”表示应用程序窗口有焦点时使用（应用程序在前台）；“false”表示无焦点时使用。    
 </code></pre>
+
+<p>二、shape的属性</p>
+
+<pre><code>每个状态（item）都对应着一个效果，shape是用来定义形状的，以下为shape的一些常见属性。
+
+1、solid: 实心，就是填充的意思 / color指定填充的颜色
+
+2、gradient: 渐变
+   android:startColor 和 android:endColor分别为起始和结束颜色,
+   android:angle是渐变角度，必须为45的整数倍。
+   当angle=0时，渐变色是从左向右。然后逆时针方向转，当angle=90时为从下往上。
+   渐变默认的模式为android:type="linear"，即线性渐变，可以指定渐变为径向渐变。
+   android:type="radial"，径向渐变需要指定半径android:gradientRadius="50"。
+   扫描渐变 android: type="sweep"
+
+3、stroke：描边
+   android:width="2dp" 描边的宽度，android:color 描边的颜色。
+   我们还可以把描边弄成虚线的形式，设置方式为：
+   android:dashWidth="5dp"
+   android:dashGap="3dp"
+   其中android:dashWidth表示'-'这样一个横线的宽度，android:dashGap表示之间隔开的距离。
+
+4、corners：圆角
+   android:radius为角的弧度，值越大角越圆。
+   我们还可以把四个角设定成不同的角度，方法为：
+      android:topRightRadius="20dp" 右上角
+      android:bottomLeftRadius="20dp" 右下角
+      android:topLeftRadius="1dp" 左上角
+      android:bottomRightRadius="0dp" 左下角
+   这里有个地方需要注意，bottomLeftRadius是右下角，而不是左下角
+
+5、panding：内边矩
+</code></pre>
 </div>
 
 
