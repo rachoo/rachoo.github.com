@@ -1,0 +1,9 @@
+---
+layout: post
+title: "title"
+date: 2014-03-04 15:55:18 +0800
+comments: true
+categories: git_init
+---
+
+hello git
