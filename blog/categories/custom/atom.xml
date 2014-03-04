@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Diablo]]></title>
-  <link href="http://rachoo.github.io/atom.xml" rel="self"/>
+  <title><![CDATA[Category: Custom | Diablo]]></title>
+  <link href="http://rachoo.github.io/blog/categories/custom/atom.xml" rel="self"/>
   <link href="http://rachoo.github.io/"/>
   <updated>2014-03-04T16:18:03+08:00</updated>
   <id>http://rachoo.github.io/</id>

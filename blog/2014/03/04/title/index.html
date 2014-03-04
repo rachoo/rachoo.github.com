@@ -5,12 +5,12 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Title - Diablo</title>
+  <title>Android自定义控件 - Diablo</title>
   <meta name="author" content="Rachoo">
 
   
-  <meta name="description" content="hello git
-">
+  <meta name="description" content="Android控件样式自定义是用定义在drawable文件夹下的XML文件实现，在布局文件中通过设置控件的background属性达到效果。 一、控件常见状态 在XML文件中用到了selector节点，selector可以理解为状态切换器。
+不同的状态下切换不同的样式，各种状态用Item节点表示， &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -69,7 +69,7 @@
   
   <header>
     
-      <h1 class="entry-title">Title</h1>
+      <h1 class="entry-title">Android自定义控件</h1>
     
     
       <p class="meta">
@@ -92,7 +92,34 @@
   </header>
 
 
-<div class="entry-content"><p>hello git</p>
+<div class="entry-content"><p>Android控件样式自定义是用定义在drawable文件夹下的XML文件实现，在布局文件中通过设置控件的background属性达到效果。</p>
+
+<p>一、控件常见状态</p>
+
+<pre><code>在XML文件中用到了selector节点，selector可以理解为状态切换器。
+不同的状态下切换不同的样式，各种状态用Item节点表示，以下为一些常见的状态
+
+1、android:state_pressed boolean。
+“true”表示按下状态使用（例如按钮按下）；“false”表示非按下状态使用。
+
+2、android:state_focused boolean。
+“true”表示聚焦状态使用（例如使用滚动球/d-pad聚焦button）；“false”表示非聚焦状态使用。
+
+3、android:state_selected boolean。
+“true”表示选中状态使用（例如tab打开）；“false”表示非选中状态使用。
+
+4、android:state_checkable boolean。
+“true”表示可勾选状态时使用；“false”表示非可勾选状态使用。
+
+5、android:state_checked boolean。
+“true”表示勾选状态使用；“false”表示非勾选状态使用。
+
+6、android:state_enabled boolean。
+“true”表示可用状态使用（能接收触摸/点击事件）；“false”表示不可用状态使用。
+
+7、android:window_focused boolean。
+“true”表示应用程序窗口有焦点时使用（应用程序在前台）；“false”表示无焦点时使用。    
+</code></pre>
 </div>
 
 
@@ -120,7 +147,7 @@
 
 <span class="categories">
   
-    <a class='category' href='/blog/categories/git-init/'>git_init</a>
+    <a class='category' href='/blog/categories/android/'>Android</a>, <a class='category' href='/blog/categories/custom/'>Custom</a>, <a class='category' href='/blog/categories/view/'>View</a>
   
 </span>
 
@@ -152,7 +179,7 @@
   <ul id="recent_posts">
     
       <li class="post">
-        <a href="/blog/2014/03/04/title/">Title</a>
+        <a href="/blog/2014/03/04/title/">Android自定义控件</a>
       </li>
     
   </ul>
