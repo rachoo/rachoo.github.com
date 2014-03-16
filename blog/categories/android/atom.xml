@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Android, | Diablo]]></title>
   <link href="http://rachoo.github.io/blog/categories/android/atom.xml" rel="self"/>
   <link href="http://rachoo.github.io/"/>
-  <updated>2014-03-16T23:41:41+08:00</updated>
+  <updated>2014-03-16T23:42:55+08:00</updated>
   <id>http://rachoo.github.io/</id>
   <author>
     <name><![CDATA[Rachoo]]></name>
@@ -32,7 +32,9 @@
 
 <p>Options to reduce the storage of user information include:</p>
 
-<pre><code>1. Transmit and display but do not persist to memory. This requires special attention as well, to ensure that an analog leak does not present itself, where screenshots of the data are written to disk.
+<pre><code>1. Transmit and display but do not persist to memory. 
+This requires special attention as well, to ensure that an analog leak does not present itself, 
+where screenshots of the data are written to disk.
 2. Store only in RAM (clear at application close)
 3. Encrypt the data using strong encryption, combined with a master key encrypted with a passphrase required when the application starts
 </code></pre>
