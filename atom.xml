@@ -4,7 +4,7 @@
   <title><![CDATA[Diablo]]></title>
   <link href="http://rachoo.github.io/atom.xml" rel="self"/>
   <link href="http://rachoo.github.io/"/>
-  <updated>2014-03-04T16:27:34+08:00</updated>
+  <updated>2014-03-16T23:39:49+08:00</updated>
   <id>http://rachoo.github.io/</id>
   <author>
     <name><![CDATA[Rachoo]]></name>
@@ -12,6 +12,36 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Android Security]]></title>
+    <link href="http://rachoo.github.io/blog/2014/03/16/android-security/"/>
+    <updated>2014-03-16T23:21:52+08:00</updated>
+    <id>http://rachoo.github.io/blog/2014/03/16/android-security</id>
+    <content type="html"><![CDATA[<p>Avoid storing sensitive data</p>
+
+<p>If possible, do not store sensitive data on the device.</p>
+
+<p>Consider that nearly any data stored locally, even if encrypted, could be compromised – only store data if essential.</p>
+
+<p>For many applications, it is functionally and technically possible to simply not store sensitive data.</p>
+
+<p>If sensitive data must be stored locally, use properly implemented encryption.</p>
+
+<p>While not 100% secure, it can add significant complexity to an attack.</p>
+
+<p>A master key should be encrypted with a user passphrase, using a key derivation function, such as PBKDF2, with a very high number of iterations to consume enough CPU so as to make a brute force attempt very computationally time consuming, even on a faster platform.</p>
+
+<p>Options to reduce the storage of user information include:</p>
+
+<pre><code>1. Transmit and display but do not persist to memory. This requires special attention as well, to ensure that an analog leak does not present itself, where screenshots of the data are written to disk.
+2. Store only in RAM (clear at application close)
+3. Encrypt the data using strong encryption, combined with a master key encrypted with a passphrase required when the application starts
+</code></pre>
+
+<p>Other options such as using a local file and then clearing or deleting it upon application exit are not sufficient for preventing the recovery of data.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Android自定义控件]]></title>

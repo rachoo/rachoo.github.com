@@ -9,8 +9,7 @@
   <meta name="author" content="Rachoo">
 
   
-  <meta name="description" content="Android控件样式自定义是用定义在drawable文件夹下的XML文件实现，在布局文件中通过设置控件的background属性达到效果。 一、控件常见状态 在XML文件中用到了selector节点，selector可以理解为状态切换器。
-不同的状态下切换不同的样式，各种状态用Item节点表示， &hellip;">
+  <meta name="description" content="Avoid storing sensitive data If possible, do not store sensitive data on the device. Consider that nearly any data stored locally, even if encrypted &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -66,6 +65,63 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2014/03/16/android-security/">Android Security</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-03-16T23:21:52+08:00" pubdate data-updated="true">Mar 16<span>th</span>, 2014</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Avoid storing sensitive data</p>
+
+<p>If possible, do not store sensitive data on the device.</p>
+
+<p>Consider that nearly any data stored locally, even if encrypted, could be compromised – only store data if essential.</p>
+
+<p>For many applications, it is functionally and technically possible to simply not store sensitive data.</p>
+
+<p>If sensitive data must be stored locally, use properly implemented encryption.</p>
+
+<p>While not 100% secure, it can add significant complexity to an attack.</p>
+
+<p>A master key should be encrypted with a user passphrase, using a key derivation function, such as PBKDF2, with a very high number of iterations to consume enough CPU so as to make a brute force attempt very computationally time consuming, even on a faster platform.</p>
+
+<p>Options to reduce the storage of user information include:</p>
+
+<pre><code>1. Transmit and display but do not persist to memory. This requires special attention as well, to ensure that an analog leak does not present itself, where screenshots of the data are written to disk.
+2. Store only in RAM (clear at application close)
+3. Encrypt the data using strong encryption, combined with a master key encrypted with a passphrase required when the application starts
+</code></pre>
+
+<p>Other options such as using a local file and then clearing or deleting it upon application exit are not sufficient for preventing the recovery of data.</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -174,6 +230,10 @@
     <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2014/03/16/android-security/">Android Security</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2014/03/04/custom_view/">Android自定义控件</a>
