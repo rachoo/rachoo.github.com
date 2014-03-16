@@ -4,7 +4,7 @@
   <title><![CDATA[Diablo]]></title>
   <link href="http://rachoo.github.io/atom.xml" rel="self"/>
   <link href="http://rachoo.github.io/"/>
-  <updated>2014-03-16T23:39:49+08:00</updated>
+  <updated>2014-03-16T23:41:41+08:00</updated>
   <id>http://rachoo.github.io/</id>
   <author>
     <name><![CDATA[Rachoo]]></name>
@@ -14,13 +14,11 @@
 
   
   <entry>
-    <title type="html"><![CDATA[Android Security]]></title>
+    <title type="html"><![CDATA[Avoid Storing Sensitive Data]]></title>
     <link href="http://rachoo.github.io/blog/2014/03/16/android-security/"/>
     <updated>2014-03-16T23:21:52+08:00</updated>
     <id>http://rachoo.github.io/blog/2014/03/16/android-security</id>
-    <content type="html"><![CDATA[<p>Avoid storing sensitive data</p>
-
-<p>If possible, do not store sensitive data on the device.</p>
+    <content type="html"><![CDATA[<p>If possible, do not store sensitive data on the device.</p>
 
 <p>Consider that nearly any data stored locally, even if encrypted, could be compromised – only store data if essential.</p>
 
